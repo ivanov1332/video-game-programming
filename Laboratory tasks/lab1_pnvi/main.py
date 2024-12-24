@@ -21,7 +21,7 @@ class Square(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.x = x * tile_size
         self.rect.y = y * tile_size
-        self.color = random.choice(colors)
+        self.color = WHITE
         self.image.fill(self.color)
 
     def update(self, color=None):
